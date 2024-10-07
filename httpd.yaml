@@ -1,0 +1,5 @@
+- name: check httpd service
+  hosts: all
+  tasks:
+    - name: checking httpd service status
+      ansible.builtin.command: systemctl status httpd
